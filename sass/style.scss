@@ -1,0 +1,20 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+// Primary
+$blue: hsl(223, 87%, 63%);
+
+// Secondary
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+// Neutral
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+body {
+    font: {
+        size: math.div(20px, 16px) * 100%;
+        family: 'Libre Franklin', sans-serif;
+    }
+}

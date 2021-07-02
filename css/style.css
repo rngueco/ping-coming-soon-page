@@ -67,9 +67,13 @@ main {
   border: 1px solid #c2d3ff;
   padding: 0 2em;
   width: 100%;
+  outline: none;
 }
 .subscribe input[type=email]::placeholder {
   color: #c2d3ff;
+}
+.subscribe input[type=email]:focus {
+  border: 2px solid #4f7df3;
 }
 .subscribe input[type=email].error {
   border-color: #ff5263;
@@ -81,9 +85,13 @@ main {
   cursor: pointer;
   box-shadow: 0px 0.25em 12px 1px #c2d3ff;
   transition: background-color 0.3s ease;
+  outline: none;
 }
 .subscribe input[type=submit]:hover {
   background-color: #648ffc;
+}
+.subscribe input[type=submit]:focus {
+  border: 2px solid #151f29;
 }
 .subscribe .error-message {
   display: block;

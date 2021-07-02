@@ -103,9 +103,14 @@ main {
         border: 1px solid $pale-blue;
         padding: 0 2em;
         width: 100%;
+        outline: none;
         
         &::placeholder {
             color: $pale-blue;
+        }
+
+        &:focus {
+            border: 2px solid $blue;
         }
 
         &.error {
@@ -120,9 +125,14 @@ main {
         cursor: pointer;
         box-shadow: 0px 0.25em 12px 1px $pale-blue;
         transition: background-color 0.3s ease;
+        outline: none;
 
         &:hover {
             background-color: hsl(223, 96%, 69%);
+        }
+
+        &:focus {
+            border: 2px solid $very-dark-blue;
         }
     }
 

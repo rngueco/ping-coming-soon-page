@@ -13,6 +13,8 @@ $gray: hsl(0, 0%, 59%);
 $very-dark-blue: hsl(209, 33%, 12%);
 
 body {
+    margin: 0;
+    padding: 0;
     font: {
         size: math.div(20px, 16px) * 100%;
         family: 'Libre Franklin', sans-serif;
@@ -28,7 +30,7 @@ body {
 
 main {
     min-height: 90vh;
-    width: min(100vw, 550px);
+    width: min(100%, 550px);
     padding: 2em 0;
 
     margin: {

@@ -4,4 +4,117 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+*, * *, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.spritesheet {
+  display: none;
+}
+
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  height: 1em;
+}
+
+.content {
+  text-align: center;
+  color: #151f29;
+}
+.content h1 {
+  font-size: 1.2em;
+}
+.content p {
+  font-size: 0.7em;
+}
+.content .light-text {
+  color: #969696;
+  font-weight: lighter;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.subscribe > * {
+  font-family: inherit;
+  height: 3em;
+  border-radius: 1.5em;
+  flex-grow: 1;
+  flex-basis: 375px;
+}
+.subscribe input[type=email] {
+  border: 1px solid #c2d3ff;
+  padding: 0 2em;
+}
+.subscribe input[type=email]::placeholder {
+  color: #c2d3ff;
+}
+.subscribe input[type=email].error {
+  border-color: #ff5263;
+}
+.subscribe input[type=submit] {
+  border: none;
+  background-color: #4f7df3;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0.25em 12px 1px #c2d3ff;
+  transition: background-color 0.3s ease;
+}
+.subscribe input[type=submit]:hover {
+  background-color: #648ffc;
+}
+
+.dashboard {
+  width: 100%;
+  padding: 1em;
+}
+
+footer {
+  text-align: center;
+  color: #969696;
+  padding: 1em;
+  font-size: 0.6em;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  height: 3.25em;
+  width: 3.25em;
+  line-height: 3.75em;
+  transition: all 0.3s ease;
+}
+.icon-wrapper:hover {
+  background-color: #4f7df3;
+  border-color: #4f7df3;
+}
+.icon-wrapper:hover .icon {
+  fill: white;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0;
+  stroke: #151f29;
+  fill: #4f7df3;
+  transition: all 0.3s ease;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -46,6 +46,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+  padding: 1em;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -77,6 +78,12 @@ main {
 .subscribe input[type=submit]:hover {
   background-color: #648ffc;
 }
+.subscribe .error-message {
+  text-align: center;
+  color: #ff5263;
+  font-size: 0.5em;
+  font-style: italic;
+}
 
 .dashboard {
   width: 100%;
@@ -90,6 +97,10 @@ footer {
   font-size: 0.6em;
 }
 
+.social {
+  margin-bottom: 2em;
+}
+
 .icon-wrapper {
   display: inline-block;
   border: 1px solid #c2d3ff;
@@ -97,7 +108,7 @@ footer {
   height: 3.25em;
   width: 3.25em;
   line-height: 3.75em;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .icon-wrapper:hover {
   background-color: #4f7df3;

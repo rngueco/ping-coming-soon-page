@@ -33,7 +33,7 @@ function addErrorMessage(evt) {
 
     // Check what kind of error it is and return appropriate error message.
     if (evt.target.value == "" || evt.target.value == null) {
-        error_msg.innerText = "Please enter an email address"
+        error_msg.innerText = "Whoops! It looks like you forgot to add your email"
     } else {
         error_msg.innerText = "Please provide a valid email address"
     }

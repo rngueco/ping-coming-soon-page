@@ -4,13 +4,12 @@ const email_input = document.querySelector('input[type="email"]');
 // Add an invalid event listener to input
 email_input.addEventListener('invalid', addErrorMessage);
 
-// Check for validity when user focuses out of input field
-email_input.addEventListener('blur', () => {
-    email_input.checkValidity();
+// Check for validity when user focuses out of input field.
+// If valid, remove any existing error message.
+email_input.addEventListener('blur', (e) => {
+    if (!email_input.checkValidity()) { }
+    else removeErrorMessage(e);
 })
-
-// Everytime user focuses on input field, remove any existing error message.
-email_input.addEventListener('focus', removeErrorMessage)
 
 // Return an error message when user submits form with invalid input
 subscribe_form.addEventListener('submit', (e) => {
@@ -30,6 +29,7 @@ function addErrorMessage(evt) {
     // Build an error message element.
     let error_msg = document.createElement('span');
     error_msg.classList.add('error-message');
+    error_msg.setAttribute("aria-live", "polite");
 
     // Check what kind of error it is and return appropriate error message.
     if (evt.target.value == "" || evt.target.value == null) {
